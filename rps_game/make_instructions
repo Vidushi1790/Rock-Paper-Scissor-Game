@@ -1,0 +1,6 @@
+Compile and Run the code by using any of the two commands:  
+    1. Compile: g++ -o main *.cpp
+    2. Run: ./main
+OR
+    1. Compile: g++ chooser.cpp main.cpp startGame.cpp scoreBoard.cpp player.cpp gameData.cpp OR
+    2. Run: ./a.out
