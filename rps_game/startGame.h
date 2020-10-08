@@ -12,6 +12,7 @@ class startGame{
         startGame() 
         {
             rounds = 0;
+            maxRounds = 20;
         }
  
         void start(void);
@@ -22,6 +23,7 @@ class startGame{
 
         void setMaxRounds(int);
         int getMaxRounds(void);
+        void selectMaxRounds(void);
 };
 
 #endif

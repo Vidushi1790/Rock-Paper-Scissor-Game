@@ -33,13 +33,17 @@ void startGame::validateRounds(int rounds)
 
 void startGame::start(void)
 {
-    // this function is the start scenario. it basically initializes some default values
-    // and welcomes our player into the game
+    // this function is the start scenario. it welcomes our player into the game
     cout << "-------------------------------------------------" << endl;
     cout << "  Welcome to the Rock, Paper, Scissors Game!  " << endl;
     cout << "-------------------------------------------------" << endl;
+}
+
+void startGame::selectMaxRounds(void)
+{
+    /* added to avoid playing 20 rounds */
     int userRounds;
-    cout << "How many rounds do you want to play (Enter number)?" << endl;
+    cout << endl << "How many rounds do you want to play (Enter number)?" << endl;
     cin >> userRounds;
     
     // while statement that ensures the user enters a valid round count (upto 20)
@@ -49,7 +53,7 @@ void startGame::start(void)
         cin >> userRounds;
     }
     
-    cout << endl << endl << "You've chosen to play " << userRounds << " rounds." << endl << endl;
+    cout << "You've chosen to play " << userRounds << " rounds." << endl << endl;
 
     //exit the game, if users enters the 0 rounds to play.
     validateRounds(userRounds);

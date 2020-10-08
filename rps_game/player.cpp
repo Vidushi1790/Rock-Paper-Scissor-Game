@@ -12,9 +12,9 @@ void player::welcomeTag(void)
     cout << "Please enter your name to play the game!" << endl;
     cin >> player;
     setName(player);
-    cout << endl << "-------------------------" << endl;
+    cout << "-------------------------------------------------" << endl;
     cout <<"Welcome " << player << ". Good luck!" << endl;
-    cout << "-------------------------" << endl;
+    cout << "-------------------------------------------------" << endl;
 }
 
 void player::setName(string theName)

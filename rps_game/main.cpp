@@ -30,6 +30,7 @@ int main(){
     // RPS game starts here.
     game.start();
     player.welcomeTag();
+    game.selectMaxRounds();
 
     // This will loop our game until all the rounds have passed.
     do 
